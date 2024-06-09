@@ -9,6 +9,6 @@ Currently working on this project which is a frontend clone of the popular music
 - **Responsive Design:** Adapts to various screen sizes and devices.
 
 ## **Technologies Used**
-**HTML:** For the basic structure of the application.
-**CSS:** For styling and layout.
-**JavaScript:** For interactivity and dynamic content.
+- **HTML:** For the basic structure of the application.
+- **CSS:** For styling and layout.
+- **JavaScript:** For interactivity and dynamic content.
