@@ -1,0 +1,188 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  color: #fff;
+  background-color: #000000;
+  font-family: "Open Sans", sans-serif;
+}
+.invert {
+  filter: invert(1);
+}
+.left {
+  width: 20vw;
+  padding: 6px;
+}
+.right {
+  width: 80vw;
+  padding: 0px;
+  margin-top: 5px;
+  margin-right: 5px;
+  position: relative;
+}
+.home {
+  padding: 20px;
+}
+.homeLogo {
+  width: 20px;
+}
+.libLogo {
+  width: 20px;
+}
+.home ul li {
+  list-style: none;
+  width: 18px;
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+.library {
+  min-height: 61vh;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 4px;
+  /* display: flex; */
+  /* gap: 50px; */
+  background-color: #121212;
+  color: #9f9f9f;
+}
+.heading {
+  /* border: 2px solid red; */
+  /* width: 18px; */
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  /* font-weight: bold; */
+}
+.Button-add {
+  background-color: #121212;
+  color: #9f9f9f;
+  padding: auto;
+  font-size: 16px;
+  border-radius: 100%;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  /* padding: 20px; */
+}
+.Button-add:hover {
+  color: #fff;
+}
+.ho:hover {
+  color: #fff;
+}
+.container2 {
+  background-color: #2a2525;
+  border-radius: 5px;
+  min-height: 35vh;
+}
+.footer {
+  font-size: 9px;
+  gap: 15px;
+  /* min-height: 25vh; */
+  display: ruby-text;
+}
+.footer a {
+  color: grey;
+  text-decoration: none;
+}
+.language {
+  margin-top: 12px;
+  padding: 5px;
+  width: 70px;
+  border: 1px solid #9f9f9f;
+  border-radius: 5px;
+}
+.lang-eng {
+  width: 18px;
+  display: flex;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  gap: 5px;
+  font-weight: 700;
+}
+.language:hover {
+  border: 1px solid #fff;
+  width: 75px;
+  padding: 7px;
+}
+.header {
+  /* border: 1px solid black; */
+  border-top: 1px solid black;
+  background-color: #101010;
+  display: flex;
+  justify-content: space-between;
+}
+.header > * {
+  padding: 12px;
+}
+.Button-right {
+  display: flex;
+  gap: 30px;
+  /* font-size: 16px; */
+  /* font-weight: 700; */
+}
+.signbtn {
+  background-color: transparent;
+  color: #9f9f9f;
+  border: none;
+}
+.signbtn:hover {
+  color: #fff;
+  font-size: 15px;
+}
+.logbtn {
+  background-color: #fff;
+  color: #000000;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+  border: none;
+}
+.logbtn:hover {
+  font-weight: bolder;
+}
+.CardContainer {
+  gap: 18px;
+  flex-wrap: wrap;
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+.card {
+  width: 160px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #252525;
+  position: relative;
+}
+.play {
+  position: absolute;
+  right: 5px;
+  top: 128px;
+  opacity: 1;
+  transition: all 2s ease-out;
+}
+.card > * {
+  padding-top: 7px;
+  font-size: 12px;
+}
+.card img {
+  width: 100%;
+  object-fit: contain;
+}
+.playbar {
+  padding: 12px;
+  position: absolute;
+  bottom: 0;
+  background-color: aquamarine;
+  width: 100%;
+}
+.songsbtn {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
