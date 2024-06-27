@@ -3,7 +3,7 @@
 Currently working on this project which is a frontend clone of the popular music streaming service, Spotify.It aims to replicate the look and feel of Spotify's user interface using HTML, CSS, and JavaScript. This clone is for educational purposes, allowing developers to practice and improve their frontend development skills.
 
 ## **Live Demo**
-Check out the live demo [here]( https://harshscripts22.github.io/Spotify-Clone/).
+Check out the live demo [here](  https://harshscripts22.github.io/Spotify-Clone/).
 
 ## **Features**
 - **Home Page:** A landing page similar to Spotify’s home screen.
