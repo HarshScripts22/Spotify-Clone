@@ -2,6 +2,9 @@
   border: 2px solid rgb(0, 0, 0);
   /* margin: 4px; */
 }
+.block {
+  display: block;
+}
 .flex {
   display: flex;
 }
@@ -26,6 +29,9 @@
 }
 .base-bg {
   background-color: #121212;
+}
+.inverto {
+  filter: invert(1);
 }
 /* For WebKit browsers like Chrome or Safari */
 ::-webkit-scrollbar {

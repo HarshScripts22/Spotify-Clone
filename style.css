@@ -203,3 +203,14 @@ body {
   /* justify-content: center; */
   gap: 16px;
 }
+ul {
+  list-style: none;
+}
+.track-list {
+  list-style-type: none;
+  padding: 0;
+}
+.track {
+  margin-bottom: 10px;
+  display: flex;
+}
