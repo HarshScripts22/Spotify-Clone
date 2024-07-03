@@ -77,7 +77,7 @@ body {
 .container2 {
   background-color: #2a2525;
   border-radius: 5px;
-  min-height: 35vh;
+  /* min-height: 35vh; */
 }
 .footer {
   font-size: 9px;
@@ -90,7 +90,7 @@ body {
   text-decoration: none;
 }
 .language {
-  margin-top: 12px;
+  /* margin-top: 12px; */
   padding: 5px;
   width: 70px;
   border: 1px solid #9f9f9f;
@@ -175,27 +175,24 @@ body {
   object-fit: contain;
 }
 .playbar {
-  border-radius: 10px;
-  border: 2px solid rgb(1, 1, 1);
-  background-color: #2a2525;
-  min-height: 12vh;
-  margin: 4px;
-
-  position: sticky;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-left: 0;
+  position: fixed;
+  bottom: 8px;
+  /* filter: invert(1); */
+  background: #121212;
+  border-radius: 15px;
+  width: 90%;
   padding: 12px;
-  position: absolute;
-  bottom: 0;
-  background-color: aquamarine;
-  width: 100%; */
+  width: 98vw;
+  min-height: 63px;
 }
 .songsbtn {
   /* border: 2px solid red; */
   display: flex;
   justify-content: center;
+  filter: invert(1);
   /* align-items: center; */
   /* width: 100%; */
   /* margin: 0; */
@@ -203,14 +200,30 @@ body {
   /* justify-content: center; */
   gap: 16px;
 }
-ul {
-  list-style: none;
+.container3 {
+  height: 328px;
+  overflow: auto;
 }
-.track-list {
-  list-style-type: none;
-  padding: 0;
+.container3 ul {
+  padding: 0 10px;
+  /* list-style: none; */
 }
-.track {
-  margin-bottom: 10px;
+.container3 ul li {
+  list-style-type: decimal;
   display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  padding: 12px;
+  border: 1px solid white;
+  margin: 12px 0;
+  border-radius: 5px;
+}
+.playnow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container3.songinfo {
+  font-size: 14px;
 }

@@ -59,30 +59,55 @@ console.log("here is javascript code");
   //     console.error("Error fetching playlist:", error);
   //   });
 
+  // fetchPlaylist(playlistId)
+  //   .then((playlist) => {
+  //     // Populate the tracks into the library div
+  //     const libraryContainer = document.querySelector(".container3");
+  //     const tracklist = document.querySelector(".track-list");
+  //     const trackListContainer = document.createElement("div");
+  //     trackListContainer.className = "track-list";
+
+  //     playlist.tracks.items.forEach((item) => {
+  //       const musicp = document.createElement("img");
+  //       musicp.className = "inverto";
+  //       musicp.src = "music.svg";
+  //       trackListContainer.appendChild(musicp);
+  //       const trackElement = document.querySelector(".songinfo");
+  //       trackElement.className = "track";
+  //       trackElement.innerText = `${item.track.name} by ${item.track.artists
+  //         .map((artist) => artist.name)
+  //         .join(", ")}`;
+  //       trackListContainer.appendChild(trackElement);
+  //     });
+
+  //     libraryContainer.appendChild(trackListContainer);
+  //   })
+  //   .catch((error) => {
+  //     console.error("Error fetching playlist:", error);
+  //   });
   fetchPlaylist(playlistId)
     .then((playlist) => {
-      // Populate the tracks into the library div
-      const libraryContainer = document.querySelector(".container3");
-      const tracklist = document.querySelector(".track-list");
-      const trackListContainer = document.createElement("div");
-      trackListContainer.className = "track-list";
-
+      const libraryContainer = document
+        .querySelector(".container3")
+        .getElementsByTagName("ul")[0];
+      libraryContainer.innerHTML = "";
       playlist.tracks.items.forEach((item) => {
-        const musicp = document.createElement("img");
-        musicp.className = "inverto";
-        musicp.src = "music.svg";
-        trackListContainer.appendChild(musicp);
-        const trackElement = document.querySelector(".songinfo");
-        // trackElement.className = "track";
-        trackElement.innerText = `${item.track.name} by ${item.track.artists
-          .map((artist) => artist.name)
-          .join(", ")}`;
-        trackListContainer.appendChild(trackElement);
+        libraryContainer.innerHTML =
+          libraryContainer.innerHTML +
+          `<li><img src="music.svg " class="inverto" srcset="" />
+                  <div class="songinfo">${item.track.name} </div>
+                   <div class="playnow">
+                              
+                                <img width="34" src="play.svg" alt="">
+                            </div>
+                  
+                 </li>`;
+        //     by ${item.track.artists
+        // .map((artist) => artist.name)
+        // .join(", ")} for artist name
       });
-
-      libraryContainer.appendChild(trackListContainer);
     })
     .catch((error) => {
-      console.error("Error fetching playlist:", error);
+      console.log("Error fetching playlist: ", error);
     });
 })();
