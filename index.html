@@ -33,20 +33,11 @@
             <h5 class="ho">Your library</h5>
             <button class="Button-add">+</button>
           </div>
-          <div class="container2 flex">
-            <!-- <h3 class="ho">create your playlist</h3>
-            <h3 class="ho">Your playlist songs</h3> -->
+          <div class="container2">
+            <!-- <h3 class="ho">create your playlist</h3> -->
+            <h4 class="ho">Your playlist songs</h4>
             <div class="container3">
-              <ul>
-                <!-- <li>
-                  <img src="music.svg " class="inverto" srcset="" />
-                  <div class="songinfo">songname</div>
-                  <div class="playnow">
-                    <span>Play Now</span>
-                    <img src="play.svg" class="inverto" alt="" srcset="" />
-                  </div>
-                </li> -->
-              </ul>
+              <ul></ul>
             </div>
           </div>
 
@@ -182,138 +173,7 @@
               <h3>Dinner with Friends</h3>
               <p>The Perfect Soundtrack to those long nights over...</p>
             </div>
-            <div class="card">
-              <div class="play">
-                <img src="play.svg" srcset="" />
-              </div>
-              <img
-                src="https://i.scdn.co/image/ab67706f00000002dd9acb211caf8703ea9bfc98"
-                alt=""
-                srcset=""
-              />
-              <h3>Dinner with Friends</h3>
-              <p>The Perfect Soundtrack to those long nights over...</p>
-            </div>
-            <div class="card">
-              <div class="play">
-                <img src="play.svg" srcset="" />
-              </div>
-              <img
-                src="https://i.scdn.co/image/ab67706f000000028dc9fe0c14e5f34ad165e3c2"
-                alt=""
-                srcset=""
-              />
-              <h3>Dinner with Friends</h3>
-              <p>The Perfect Soundtrack to those long nights over...</p>
-            </div>
-            <div class="card">
-              <div class="play">
-                <img src="play.svg" srcset="" />
-              </div>
-              <img
-                src="https://i.scdn.co/image/ab67706f000000027cd703bbfec2f1e86c879bec"
-                alt=""
-                srcset=""
-              />
-              <h3>Dinner with Friends</h3>
-              <p>The Perfect Soundtrack to those long nights over...</p>
-            </div>
-            <div class="card">
-              <div class="play">
-                <img src="play.svg" srcset="" />
-              </div>
-              <img
-                src="https://i.scdn.co/image/ab67706f000000022ba865eb4204be02ce3e8e09"
-                alt=""
-                srcset=""
-              />
-              <h3>Dinner with Friends</h3>
-              <p>The Perfect Soundtrack to those long nights over...</p>
-            </div>
-            <div class="card">
-              <div class="play">
-                <img src="play.svg" srcset="" />
-              </div>
-              <img
-                src="https://i.scdn.co/image/ab67706f000000027cd703bbfec2f1e86c879bec"
-                alt=""
-                srcset=""
-              />
-              <h3>Dinner with Friends</h3>
-              <p>The Perfect Soundtrack to those long nights over...</p>
-            </div>
-            <div class="card">
-              <div class="play">
-                <img src="play.svg" srcset="" />
-              </div>
-              <img
-                src="https://i.scdn.co/image/ab67706f000000022ba865eb4204be02ce3e8e09"
-                alt=""
-                srcset=""
-              />
-              <h3>Dinner with Friends</h3>
-              <p>The Perfect Soundtrack to those long nights over...</p>
-            </div>
-            <div class="card">
-              <div class="play">
-                <img src="play.svg" srcset="" />
-              </div>
-              <img
-                src="https://i.scdn.co/image/ab67706f000000027cd703bbfec2f1e86c879bec"
-                alt=""
-                srcset=""
-              />
-              <h3>Dinner with Friends</h3>
-              <p>The Perfect Soundtrack to those long nights over...</p>
-            </div>
-            <div class="card">
-              <div class="play">
-                <img src="play.svg" srcset="" />
-              </div>
-              <img
-                src="https://i.scdn.co/image/ab67706f000000022ba865eb4204be02ce3e8e09"
-                alt=""
-                srcset=""
-              />
-              <h3>Dinner with Friends</h3>
-              <p>The Perfect Soundtrack to those long nights over...</p>
-            </div>
-            <div class="card">
-              <div class="play">
-                <img src="play.svg" srcset="" />
-              </div>
-              <img
-                src="https://i.scdn.co/image/ab67706f000000027cd703bbfec2f1e86c879bec"
-                alt=""
-                srcset=""
-              />
-              <h3>Dinner with Friends</h3>
-              <p>The Perfect Soundtrack to those long nights over...</p>
-            </div>
-            <div class="card">
-              <div class="play">
-                <img src="play.svg" srcset="" />
-              </div>
-              <img
-                src="https://i.scdn.co/image/ab67706f000000022ba865eb4204be02ce3e8e09"
-                alt=""
-                srcset=""
-              />
-              <h3>Dinner with Friends</h3>
-              <p>The Perfect Soundtrack to those long nights over...</p>
-            </div>
-            <div class="card">
-              <div class="play">
-                <img src="play.svg" srcset="" />
-              </div>
-              <img
-                src="https://i.scdn.co/image/ab67706f000000027cd703bbfec2f1e86c879bec"
-                alt=""
-                srcset=""
-              />
-              <h3>Dinner with Friends</h3>
-              <p>The Perfect Soundtrack to those long nights over...</p>
-            </div>
+
             <div class="card">
               <div class="play">
                 <img src="play.svg" srcset="" />
@@ -331,6 +191,9 @@
       </div>
     </div>
     <div class="playbar">
+      <div class="seekbar">
+        <div class="circle"></div>
+      </div>
       <div class="songinfo"></div>
       <div class="songsbtn">
         <img src="previous.svg" alt="" /><img src="playbar.svg" alt="" /><img
@@ -340,6 +203,7 @@
       </div>
       <div class="songtime"></div>
     </div>
+    <audio id="audio-player"></audio>
     <script src="script.js"></script>
   </body>
 </html>

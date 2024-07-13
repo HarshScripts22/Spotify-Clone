@@ -40,51 +40,6 @@ console.log("here is javascript code");
   //     console.error("Error fetching playlist:", error);
   //   });
 
-  //*******************************************************************************
-  // fetchPlaylist(playlistId)
-  //   .then((playlist) => {
-  //     console.log("Playlist Name:", playlist.name);
-  //     console.log("Description:", playlist.description);
-  //     console.log("Number of Followers:", playlist.followers.total);
-  //     console.log("Tracks:");
-  //     playlist.tracks.items.forEach((item) => {
-  //       console.log(
-  //         `- ${item.track.name} by ${item.track.artists
-  //           .map((artist) => artist.name)
-  //           .join(", ")}`
-  //       );
-  //     });
-  //   })
-  //   .catch((error) => {
-  //     console.error("Error fetching playlist:", error);
-  //   });
-
-  // fetchPlaylist(playlistId)
-  //   .then((playlist) => {
-  //     // Populate the tracks into the library div
-  //     const libraryContainer = document.querySelector(".container3");
-  //     const tracklist = document.querySelector(".track-list");
-  //     const trackListContainer = document.createElement("div");
-  //     trackListContainer.className = "track-list";
-
-  //     playlist.tracks.items.forEach((item) => {
-  //       const musicp = document.createElement("img");
-  //       musicp.className = "inverto";
-  //       musicp.src = "music.svg";
-  //       trackListContainer.appendChild(musicp);
-  //       const trackElement = document.querySelector(".songinfo");
-  //       trackElement.className = "track";
-  //       trackElement.innerText = `${item.track.name} by ${item.track.artists
-  //         .map((artist) => artist.name)
-  //         .join(", ")}`;
-  //       trackListContainer.appendChild(trackElement);
-  //     });
-
-  //     libraryContainer.appendChild(trackListContainer);
-  //   })
-  //   .catch((error) => {
-  //     console.error("Error fetching playlist:", error);
-  //   });
   fetchPlaylist(playlistId)
     .then((playlist) => {
       const libraryContainer = document
@@ -105,6 +60,8 @@ console.log("here is javascript code");
         //     by ${item.track.artists
         // .map((artist) => artist.name)
         // .join(", ")} for artist name
+
+        //
       });
     })
     .catch((error) => {

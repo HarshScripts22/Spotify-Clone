@@ -186,7 +186,7 @@ body {
   width: 90%;
   padding: 12px;
   width: 98vw;
-  min-height: 63px;
+  min-height: 45px;
 }
 .songsbtn {
   /* border: 2px solid red; */
@@ -226,4 +226,25 @@ body {
 }
 .container3.songinfo {
   font-size: 14px;
+}
+.seekbar {
+  /* display: block; */
+  height: 4px;
+  width: 95%;
+  background: #1fdf64;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 8px;
+  margin: 6px;
+  cursor: pointer;
+}
+.circle {
+  width: 13px;
+  height: 13px;
+  border-radius: 13px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  bottom: 5px;
+  left: 0%;
+  transition: left 0.5s;
 }
